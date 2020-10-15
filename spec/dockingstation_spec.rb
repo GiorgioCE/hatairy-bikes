@@ -1,9 +1,11 @@
 require 'dockingstation'
 
 RSpec.describe DockingStation do
-  it 'Release a bike' do
-    expect {subject} to repsond_to eq release_bike
+  describe "#release_bike" do
+    it 'releases a working bike' do
+    expect(subject.release_bike).to respond_to
+    bike = Bike.new
+    end
   end
-
 
 end
